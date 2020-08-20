@@ -58,8 +58,8 @@ function calculate( options = { purchasePrice: 0, isToronto: false, firstTimeBuy
     }
 
     if (options.firstTimeBuyer) {
-        const discount = (options.isToronto) ? discountToronto : discount;
-        total = Math.abs(total - discount);
+        const d = (options.isToronto) ? discountToronto : discount;
+        total = Math.max(0, total - d);
     }
 
     return total;
