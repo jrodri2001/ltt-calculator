@@ -1,4 +1,4 @@
-# ltt-calculator
+# Land Transfer Tax Calculator for Ontario
 
 This is a generic Ontario Land Transfer Tax Calculator package.
 
