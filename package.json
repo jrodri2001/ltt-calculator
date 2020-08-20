@@ -1,0 +1,31 @@
+{
+  "name": "ltt-calculator",
+  "version": "1.0.0",
+  "description": "Ontario Land Transfer Tax Calculator",
+  "main": "index.js",
+  "scripts": {
+    "debug": "node --nolazy index.js",
+    "test": "mocha test/calculator.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrodri2001/ltt-calculator.git"
+  },
+  "keywords": [
+    "calculator",
+    "tax",
+    "land",
+    "transfer",
+    "tax"
+  ],
+  "author": "Julio Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrodri2001/ltt-calculator/issues"
+  },
+  "homepage": "https://github.com/jrodri2001/ltt-calculator#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.1"
+  }
+}
