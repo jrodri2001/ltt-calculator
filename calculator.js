@@ -49,8 +49,7 @@ function calculate( options = { purchasePrice: 0, isToronto: false, firstTimeBuy
         let amount = (options.purchasePrice > bracket.to) ? bracket.to - bracket.from : remaining;
         tax = amount * bracket.rate;
         total += tax;
-        remaining = remaining - amount;        
-        console.log(`Bracket ${index}: ${amount} * ${bracket.rate} = ${tax}. Remaining: ${remaining}`);        
+        remaining = remaining - amount;
     });
     
     if (options.isToronto) {
