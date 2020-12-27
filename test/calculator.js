@@ -65,6 +65,10 @@ describe("Land Transfer Tax Calculation", function() {
             const tax = Calc.calculate({ purchasePrice: 1500000, firstTimeBuyer: true });
             expect(tax).to.eql(26475 - 4000);
         });
+        it('Calculate Purchase Price bracket 4', function () {
+            const tax = Calc.calculate({ purchasePrice: 500000, firstTimeBuyer: true, isToronto: true });
+            expect(tax).to.eql(4475);
+        });
         it('Calculate Purchase Price bracket 5', function () {
             const tax = Calc.calculate({ purchasePrice: 2500000, firstTimeBuyer: true });
             expect(tax).to.eql(48975 - 4000);

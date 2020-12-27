@@ -4,7 +4,7 @@ const methods = {
     calculate,
 };
 
-const discountToronto = 4475 * 2;
+const discountToronto = 8475;
 const discount = 4000;
 
 const brackets = [
@@ -35,9 +35,9 @@ const brackets = [
     },
 ];
 
-function calculate( options = { purchasePrice: 0, isToronto: false, firstTimeBuyer: false } ) {
+function calculate(options = { purchasePrice: 0, isToronto: false, firstTimeBuyer: false }) {
     let total = 0;
-    
+
     if (!options.purchasePrice || Number.isNaN(Number(options.purchasePrice))) {
         return 0;
     }
@@ -51,7 +51,7 @@ function calculate( options = { purchasePrice: 0, isToronto: false, firstTimeBuy
         total += tax;
         remaining = remaining - amount;
     });
-    
+
     if (options.isToronto) {
         total = total * 2;
     }
